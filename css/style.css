@@ -15,40 +15,32 @@
    Containers for maximum size of screen occupancy.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 120em) {
-  .container {
-    width: 114rem;
+   @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
   }
-
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (min-width: 105em) {
-  .container {
-    width: 99.75rem;
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
   }
-
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (min-width: 90em) {
-  .container {
-    width: 85.5rem;
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
   }
-
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (min-width: 85em) {
-  .container {
-    width: 80.75rem;
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
   }
-
-  /* Style adjustments for viewports that meet the condition */
-}
 
 .container {
+  width: 100%;
   padding-right: 25px;
   padding-left: 25px;
   margin-right: auto;
@@ -391,7 +383,7 @@
 
 .main-content.section--home {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   padding-top: 135px;
   overflow: hidden;
   align-items: center;
@@ -1151,6 +1143,7 @@ textarea.form-input {
   display: block;
   float: left;
   height: 100%;
+  max-width: 100%;
 }
 
 .section-layout-aside {
